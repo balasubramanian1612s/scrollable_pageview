@@ -1,4 +1,4 @@
-# scrollable_pageview
+# vertical_scrollable_pageview
 
 A new Flutter package project.
 

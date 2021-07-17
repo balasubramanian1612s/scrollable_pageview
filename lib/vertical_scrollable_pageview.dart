@@ -1,28 +1,30 @@
-library scrollable_pageview;
+library vertical_scrollable_pageview;
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:scrollable_pageview/scrollable_list.dart';
+import 'package:vertical_scrollable_pageview/scrollable_list.dart';
 
 typedef IndexedMultipleWidgetBuilder = List<Widget> Function(
     BuildContext context, int index);
 
-class ScrollablePageView extends StatefulWidget {
+class VerticalScrollablePageview extends StatefulWidget {
   final PageController pageController;
   final Function? onPageChanged;
   final IndexedMultipleWidgetBuilder itemBuilder;
   final int? itemCount;
-  ScrollablePageView({
+  VerticalScrollablePageview({
     this.onPageChanged,
     required this.itemBuilder,
     required this.itemCount,
     required this.pageController,
   });
   @override
-  _ScrollablePageViewState createState() => _ScrollablePageViewState();
+  _VerticalScrollablePageviewState createState() =>
+      _VerticalScrollablePageviewState();
 }
 
-class _ScrollablePageViewState extends State<ScrollablePageView> {
+class _VerticalScrollablePageviewState
+    extends State<VerticalScrollablePageview> {
   late bool atTheTop;
   late bool atTheBottom;
   ScrollController activeScrollController = new ScrollController();
