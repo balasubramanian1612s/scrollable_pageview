@@ -1,14 +1,12 @@
 # vertical_scrollable_pageview
 
-A new Flutter package project.
+Infinite Vertical scrollable pages inside a Vertical PageView.
 
-## Getting Started
+## DEMO
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+https://user-images.githubusercontent.com/61572479/126046354-ff529fb2-0eeb-4f7e-a788-fc087d51870a.mov
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## Credits
+
+Made by:
+[Balasubramanian](https://github.com/balasubramanian1612s)
