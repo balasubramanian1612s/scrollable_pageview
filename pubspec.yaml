@@ -1,6 +1,6 @@
 name: vertical_scrollable_pageview
 description: You have potential to implement single child smooth scroll inside PageView
-version: 0.0.2
+version: 0.0.2 + 1
 author: Balasubramanian S
 homepage: https://github.com/balasubramanian1612s/vertical_scrollable_pageview
 
