@@ -8,7 +8,6 @@ typedef IndexedMultipleWidgetBuilder = List<Widget> Function(
     BuildContext context, int index);
 
 class VerticalScrollablePageview extends StatefulWidget {
-
   ///Pagecontroller - so you can manage anything with it from your end
   final PageController pageController;
 
@@ -33,13 +32,12 @@ class VerticalScrollablePageview extends StatefulWidget {
 
 class _VerticalScrollablePageviewState
     extends State<VerticalScrollablePageview> {
-  ///Bool to detect whether user is at top of page    
+  ///Bool to detect whether user is at top of page
   late bool atTheTop;
 
-  ///Bool to detect whether user is at bottom of page    
+  ///Bool to detect whether user is at bottom of page
   late bool atTheBottom;
 
-  
   ScrollController activeScrollController = new ScrollController();
   Drag? drag;
 
