@@ -44,21 +44,19 @@ class _VerticalScrollablePageviewState
           scrollController.position.maxScrollExtent) {
         atTheTop = false;
         atTheBottom = false;
-      } else if (scrollController.position.context.storageContext != null) {
-        if (scrollController.position.pixels ==
-            scrollController.position.minScrollExtent) {
-          atTheTop = true;
-        } else if (scrollController.position.pixels ==
-            scrollController.position.maxScrollExtent) {
-          atTheBottom = true;
-        } else {
-          atTheTop = false;
-          atTheBottom = false;
+      } else if (scrollController.position.pixels ==
+          scrollController.position.minScrollExtent) {
+        atTheTop = true;
+      } else if (scrollController.position.pixels ==
+          scrollController.position.maxScrollExtent) {
+        atTheBottom = true;
+      } else {
+        atTheTop = false;
+        atTheBottom = false;
 
-          activeScrollController = scrollController;
-          drag = activeScrollController.position.drag(details, disposeDrag);
-          return;
-        }
+        activeScrollController = scrollController;
+        drag = activeScrollController.position.drag(details, disposeDrag);
+        return;
       }
     }
 
